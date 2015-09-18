@@ -1,0 +1,48 @@
+// ==========================================================================
+// Section Styles - Portfolio
+// ==========================================================================
+
+#portfolio {
+  background-color: $color-primary;
+
+  	h2 {
+  		padding-bottom: em(20px);
+  	}
+}
+
+.portfolio-projects {
+		@media screen and (min-width: $break-small) {
+			margin-top: em(40px);
+		}
+
+		&--title {
+			margin-top: em(15px);
+			@media screen and (min-width: $break-small) {
+				margin-top: 30%;
+			}
+		}
+
+		&--desc {
+			@media screen and (min-width: $break-small) {
+				margin-top: 10%;
+				margin-bottom: 10%;
+			}
+		}
+
+		&--btn {
+			background: transparent;
+			color: $color-secondary;
+			border: 1px solid $color-secondary;
+			border-radius: $br--default;
+			margin-bottom: em(20px);
+
+			&:hover {
+				background: $color-secondary;
+				color: $color-light;
+			}
+		}
+
+		&--image {
+			margin-bottom: em(30px);
+		}
+}

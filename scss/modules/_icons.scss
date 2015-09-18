@@ -1,0 +1,31 @@
+// ==========================================================================
+// Icon Styles
+// ==========================================================================
+
+#scrollIcon {
+  margin-top: 200px;
+  padding: 10px;
+  font-size: 1.5em;
+  color: $color-secondary;
+  border: solid 2px $color-secondary;
+  border-radius: 50%;
+}
+
+// Back to top Icon
+#scrollTopIcon {
+  @extend #scrollIcon;
+  margin-top: 10px;
+  font-size: 1em;
+  color: $color-light;
+  border-color: $color-light;
+}
+
+// Toggles back to top icon visibility
+.back-to-top {
+  display: none;
+
+  	&.visible {
+  	  display: block;
+	} 
+}
+

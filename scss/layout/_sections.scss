@@ -1,0 +1,37 @@
+// ==========================================================================
+// Section Styles
+// ==========================================================================
+
+.cover {
+  padding: 10% 0 10% 0;
+
+  	&.top {
+  	  padding: 15% 0 10% 0;
+	  height: 100vh;
+	  display: flex;
+	  background-color: $color-primary;
+	}
+	
+	&.bottom {
+		padding: 10% 0 10% 0;
+	}
+}
+
+
+//Top Section
+.headline {
+	padding-top: em(100px);
+
+		@media screen and (min-width: $break-small) {
+			padding-top: em(60px);
+		}
+
+		@media screen and (min-width: $break-medium) {
+			padding-top: em(25px);
+		}
+
+		@media screen and (min-width: $break-large) {
+			padding-top: 0px;
+		}
+}
+

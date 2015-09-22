@@ -1,0 +1,43 @@
+// ==========================================================================
+// Section Styles - Contact
+// ==========================================================================
+
+
+#contact {
+  background-color: $color-secondary;
+
+  	h2 {
+  		color: $color-primary;
+  	}
+}
+
+.contact {
+
+	&-header {
+
+
+	}
+
+	&-email {
+
+	}
+
+	&-social-icons {
+
+		p {
+			color: $color-primary;
+		}
+
+		ul {
+			color: $color-primary;
+			list-style: none;
+
+
+			li {
+				@extend %center-align;
+				display: inline-block;
+				padding: 2%;
+			}
+		}
+	}
+}

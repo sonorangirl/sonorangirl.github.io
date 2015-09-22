@@ -1,0 +1,74 @@
+// ==========================================================================
+// Section Styles - About
+// ==========================================================================
+
+
+#about {
+  background-color: $color-secondary;
+  
+  	h2 {
+  		color: $color-primary;
+  	}
+}
+
+.profile-img {
+	margin-bottom: 15px;
+	width: 120px;
+}
+
+.about {
+	padding: 4% 10% 1% 10%;
+	font-size: em(20px);
+
+	&-info {
+		@extend .about;
+	}
+
+	&-tools {
+		@extend .about;
+		padding-top: em(70px);
+		font-weight: $font-weight--bold;
+		font-size: em(24px);
+
+			@media screen and (min-width: $break-medium) {
+				padding-top: em(90px);
+			}	
+
+		ul:first-child {
+			padding-left: 0px;
+		}
+
+		ul {
+			color: $color-primary;
+			list-style: none;
+
+			li {
+				@extend %center-align;
+				padding-top: em(12px); 
+			}
+		}
+	}
+
+	&-last {
+		@extend .about;
+		padding-top: em(50px);
+		padding-bottom: 0;
+		font-size: em(18px);
+
+			@media screen and (min-width: $break-medium) {
+				padding-top: 0;
+			}	
+		
+			p {
+				color: $color-primary;
+			}
+		
+
+	}
+	
+}
+
+
+
+
+

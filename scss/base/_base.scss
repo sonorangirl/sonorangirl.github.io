@@ -2,6 +2,10 @@
 // Base Styles
 // ==========================================================================
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   position: relative;
   height: 100%;
@@ -43,4 +47,10 @@ body > .container-fluid {
 }
 .container-fluid .text-muted {
   margin: 20px 0;
+}
+
+
+//Get rid of bootstrap link/button outline after click
+.btn:focus, a:focus {
+    outline: none !important
 }

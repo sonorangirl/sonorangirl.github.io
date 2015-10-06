@@ -2,17 +2,7 @@
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-.srt {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
-
-.about-tools ul li, .contact-social-icons ul li {
+.about-tools ul li, .contact-social-icons ul a li {
   text-align: center; }
 
 .centered {
@@ -42,6 +32,9 @@
 
   .pull-left-lg {
     float: left !important; } }
+* {
+  box-sizing: border-box; }
+
 html {
   position: relative;
   height: 100%;
@@ -78,6 +71,9 @@ body > .container-fluid {
 
 .container-fluid .text-muted {
   margin: 20px 0; }
+
+.btn:focus, a:focus {
+  outline: none !important; }
 
 .navbar {
   height: 70px;
@@ -200,12 +196,15 @@ body > .container-fluid {
 
 @media screen and (min-width: 768px) {
   .portfolio-projects {
-    margin-top: 2.5em; } }
+    margin-top: 0.625em; } }
 .portfolio-projects--title {
   margin-top: 0.9375em; }
   @media screen and (min-width: 768px) {
     .portfolio-projects--title {
-      margin-top: 30%; } }
+      margin-top: 20%; } }
+  @media screen and (min-width: 1200px) {
+    .portfolio-projects--title {
+      margin-top: 5%; } }
 @media screen and (min-width: 768px) {
   .portfolio-projects--desc {
     margin-top: 10%;
@@ -220,7 +219,8 @@ body > .container-fluid {
     background: #07374a;
     color: #f0f0e6; }
 .portfolio-projects--image {
-  margin-bottom: 1.875em; }
+  margin-bottom: 1.875em;
+  padding-top: 5%; }
 
 #contact {
   background-color: #07374a; }
@@ -229,10 +229,12 @@ body > .container-fluid {
 
 .contact-social-icons p {
   color: #25b79f; }
-.contact-social-icons ul {
+.contact-social-icons ul a {
   color: #25b79f;
   list-style: none; }
-  .contact-social-icons ul li {
+  .contact-social-icons ul a:hover {
+    color: #f0f0e6; }
+  .contact-social-icons ul a li {
     display: inline-block;
     padding: 2%; }
 

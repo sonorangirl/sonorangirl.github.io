@@ -28,9 +28,13 @@
 			color: $color-primary;
 		}
 
-		ul {
+		ul a {
 			color: $color-primary;
 			list-style: none;
+
+			&:hover {
+				color: $color-light;
+			}
 
 
 			li {

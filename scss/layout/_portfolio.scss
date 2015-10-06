@@ -17,9 +17,11 @@
 
 		&--title {
 			margin-top: em(15px);
+			
 			@media screen and (min-width: $break-small) {
 				margin-top: 20%;
 			}
+
 			@media screen and (min-width: $break-large) {
 				margin-top: 5%;
 			}
@@ -47,6 +49,7 @@
 
 		&--image {
 			margin-bottom: em(30px);
+
 			padding-top: 5%;
 		}
 }
